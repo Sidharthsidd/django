@@ -1,0 +1,21 @@
+{% extends "base.html " %} {% block content %}{% load static %}
+
+<div class="conta">
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>NAME</th>
+      <th>LASTNAME</th>
+      <th>PHONENUMBER</th>
+    </tr>
+    {% for i in data_details %}
+    <tr>
+      <td>{{i.name}}</td>
+      <td>{{i.lastname}}</td>
+      {% if i > 1 %}
+      <td>{{i.phonenumber}}</td>
+      {% else %} no data is found {% endif %}
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

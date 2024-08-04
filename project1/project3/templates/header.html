@@ -1,0 +1,19 @@
+{% load static %}
+<header>
+  <h1>My Website</h1>
+  <nav class="navbar">
+      <a  href={% url "login" %}> login</a>
+      <a href={% url 'student' %}> student</a>
+      <a href={% url "calculator" %}>Calculator</a>
+      <a href={% url "formpost" %}>formpost</a>
+      <a href={% url "form" %}>form</a>
+  </nav>
+</header>
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color:cyan;
+  padding: 7px;
+  text-color:black solid ;
+}</style>

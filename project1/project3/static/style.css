@@ -1,0 +1,24 @@
+.navbar {
+    display: flex; /* Align items horizontally */
+    justify-content: flex-end; /* Align items to the right */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .navbar a {
+    padding: 10px;
+    background-color: red;
+    text-decoration: none; /* Remove underline from links */
+    color: aqua; /* Change text color */
+    margin-left: 10px; /* Space between links */
+    border-radius: 3px; /* Rounded corners for better look */
+    margin-left: 1000px;
+  }
+  
+  .navbar a:hover {
+    background-color: darkred; /* Change background color on hover */
+  }
+
+
+  

@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<h3>form using get method</h3>
+<form>
+  <div>
+    <label for="mun1">name</label>
+    <input typ="text" name="num1" value="{{n1}}" />
+  </div>
+  <div>
+    <label for="num2">lname</label>
+    <input type="text" value="{{n2}}" name="num2" />
+  </div>
+  <div>
+    output
+    <input type="text" value="{{output}}" />
+  </div>
+  <button type="submit">submit</button>
+</form>
+{% endblock %}

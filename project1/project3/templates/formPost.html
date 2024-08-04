@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<h3>form using post method</h3>
+<form method=="post">
+  {% csrf_token %}
+  <div>
+    <label for="num1">name</label>
+    <input type="text" name="num3" value="{{n3}}" />
+  </div>
+  <div>
+    <label for="num2">lname</label>
+    <input type="text" value="{{n4}}" name="num4" />
+  </div>
+  <div>
+    output
+    <input type="text" value="{{output1}}" />
+  </div>
+  <button type="submit">submit</button>
+</form>
+{% endblock %}
